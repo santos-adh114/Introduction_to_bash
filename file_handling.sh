@@ -2,6 +2,9 @@
 
 ## Here I will discuss how to slice a string. This looks trivial but it can be applied to rename files and folders
 
+## Following command looks for file named "file_name" and deletes if from all directories and sub-directories
+find . -name "file_name" -delete
+
 # following command finds all the files inside the given directory and its subdirectories for file with extension .sh and stores
 # the list in a data file list.txt
 
