@@ -41,3 +41,11 @@ cd ..
 
 ## for setting permissions
 chmod -R 777 $folder_name  # (sets permission for access to all edits in the given folder name)
+
+## searching for a expression or phrase in the file and replacing it
+IN MacOs
+brew install gnu-sed
+gsed -i 's/santosh/san/gI' hello.txt (Assuming the file hello.txt has a phrase santosh. All the phrases in the file hello.txt that contain santosh will be replaced by san)
+
+In Linux:
+sed -i "/santosh/c san" hello.txt
