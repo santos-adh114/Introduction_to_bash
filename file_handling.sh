@@ -1,7 +1,8 @@
 #!/bin/sh
 
 ## Here I will discuss how to slice a string. This looks trivial but it can be applied to rename files and folders
-
+## Follwing command to delete all files from directories without any permission issues.
+rm -r -f <directory_path> (order of -r -f does not matter. We can use rm -f -r <directory_path> as well)
 ## Following command looks for file named "file_name" and deletes if from all directories and sub-directories
 find . -name "file_name" -delete
 
